@@ -1,0 +1,47 @@
+/*
+* ==========================================
+* Cart
+* ==========================================
+*/
+
+.divTableCol {
+  display: table-cell;
+  padding: 3px 20px;
+  font-weight: bold;
+}
+
+.cart {
+  background-color: rgba(173, 172, 172, 0.26);
+  padding-top: 5px;
+  border-radius: 10px;
+}
+
+.container {
+  width: 70%;
+}
+
+button {
+  border: none;
+}
+.my_button span {
+  color: black !important;
+}
+.my_button span:hover {
+  color: white !important;
+}
+.my_button::before,
+.my_button::after {
+  background: rgba(238, 238, 238, 0);
+}
+
+.my_button:hover::before {
+  background: orange !important;
+}
+
+.my_button:hover::after {
+  background: orange !important;
+}
+
+.my_button:hover {
+  background: orange;
+}

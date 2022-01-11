@@ -1,0 +1,183 @@
+/*
+* ==========================================
+* Body
+* ==========================================
+*/
+
+body {
+    background: linear-gradient( 111deg, #ed4bca, #f57c04, #a54c10, #ff8000, #8b110f);
+    background-size: 240% 240%;
+    animation: gradient-animation 12s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.text-uppercase {
+    letter-spacing: 0.1em;
+}
+
+.text-gray {
+    color: rgb(153, 149, 149);
+}
+
+
+/*
+* ==========================================
+* Header
+* ==========================================
+*/
+
+#header {
+    background: url(../../photos/header-background.jpg) top/cover no-repeat;
+    z-index: 2 !important;
+}
+
+.carousel-inner h1 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.carousel-item .btn {
+    border-color: #fff !important;
+}
+
+.carousel-item .btn:hover {
+    border-color: var(--pink) !important;
+}
+
+.my_button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid orange;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 44%;
+    z-index: 0;
+    transition: 1s;
+}
+
+.my_button::before,
+.my_button::after {
+    position: absolute;
+    background: rgba(238, 238, 238, 0);
+    z-index: -1;
+    transition: 1s;
+    content: "";
+}
+
+.my_button::before {
+    height: 50px;
+    width: 130px;
+}
+
+.my_button::after {
+    width: 150px;
+    height: 30px;
+}
+
+.my_button:hover::before {
+    width: 0px;
+    background: #fff;
+}
+
+.my_button:hover::after {
+    height: 0px;
+    background: #fff;
+}
+
+.my_button:hover {
+    background: #fff;
+    border: none;
+    transition: 1s;
+}
+
+.my_button span {
+    transition: 1s;
+}
+
+.my_button span:hover {
+    color: black !important;
+    transition: 1s;
+}
+
+
+/*
+* ==========================================
+* Collection
+* ==========================================
+*/
+
+.active-filter-btn {
+    font-weight: 700;
+    background-color: orange;
+}
+
+.filter-button-group .btn {
+    font-weight: 500;
+    height: 2rem;
+}
+
+.filter-button-group button:hover {
+    color: black !important;
+    background-color: orange;
+    transition: 1s;
+}
+
+.collection-img img {
+    border-radius: 7px;
+}
+
+
+/*
+* ==========================================
+* Newsletter
+* ==========================================
+*/
+
+#newsletter {
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+#newsletter p {
+    max-width: 600px;
+}
+
+#newsletter .input-group {
+    max-width: 500px;
+}
+
+#newsletter .form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#newsletter .btn {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#newsletter .btn:hover {
+    background-color: rgb(36, 35, 35);
+    border-color: #000;
+}
+
+i {
+    color: orange;
+}

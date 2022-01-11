@@ -1,0 +1,134 @@
+/*
+* ==========================================
+* Shop
+* ==========================================
+*/
+
+.product-grid2 {
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+
+.product-grid2 .product-image2 {
+    overflow: hidden;
+    position: relative;
+    border-radius: 7px;
+}
+
+.product-grid2 .product-image2 img {
+    width: 100%;
+    height: auto;
+}
+
+.product-grid2 .social {
+    position: absolute;
+    bottom: 50px;
+    right: 25px;
+}
+
+.product-grid2 .social li {
+    margin: 0 0 10px;
+    display: block;
+    transform: translateX(100px);
+    transition: all 0.5s;
+}
+
+.product-grid2:hover .social li {
+    transform: translateX(0);
+}
+
+.product-grid2:hover .social li:nth-child(2) {
+    transition-delay: 0.15s;
+}
+
+.product-grid2:hover .social li:nth-child(3) {
+    transition-delay: 0.25s;
+}
+
+.product-grid2 .social li a {
+    background-color: #000;
+    line-height: 45px;
+    text-align: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.product-grid2 .social li a:hover {
+    background-color: #443d3a;
+}
+
+.product-grid2 .social li a:after,
+.product-grid2 .social li a:before {
+    content: attr(data-tip);
+    color: #fff;
+    background-color: #000;
+    font-size: 12px;
+    line-height: 22px;
+    border-radius: 3px;
+    padding: 0 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: -30px;
+}
+
+.product-grid2 .social li a:after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    border-radius: 0;
+    transform: translateX(-50%) rotate(45deg);
+    top: -22px;
+    z-index: -1;
+}
+
+.product-grid2 .social li a:hover:after,
+.product-grid2 .social li a:hover:before {
+    opacity: 1;
+}
+
+.product-grid2 .add-to-cart {
+    font-size: 15px;
+    width: 100%;
+    padding: 10px 0;
+    display: block;
+    position: absolute;
+    bottom: -100%;
+    transition: all 0.3s;
+}
+
+.product-grid2 .add-to-cart:hover {
+    background-color: rgb(255, 115, 0) !important;
+    text-decoration: none;
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.product-grid2:hover .add-to-cart {
+    bottom: 0;
+    border: none;
+}
+
+.product-grid2 .product-content {
+    padding: 20px 10px;
+}
+
+.product-grid2 .title {
+    font-size: 17px;
+    margin: 0 0 7px;
+}
+
+.product-grid2 .price {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 990px) {
+    .product-grid2 {
+        margin-bottom: 30px;
+    }
+}
