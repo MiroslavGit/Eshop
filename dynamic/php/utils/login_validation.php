@@ -10,6 +10,6 @@ if (isset($_POST["submit"])) {
 
     loginUser($conn, $nickName, $password);
 } else {
-    /* header("location: ../../eshop/dynamic/php/index.php"); */ // toto je vypis v url prehliadaci
+    header("location: ../eshop/dynamic/php/user_login.php"); // toto je vypis v url prehliadaci
     exit();
 }

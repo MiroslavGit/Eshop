@@ -100,7 +100,7 @@ function loginUser($conn, $nickName, $password)
     $nicknameExists = nicknameExists($conn, $nickName, $nickName);
 
     if ($nicknameExists == false) {
-        header("location: ../../public/usr/login_page.php?error=wrongLogin");
+        header("location: ../../dynamic/php/user_login.php?error=wrongLogin");
         exit();
     }
 
@@ -112,7 +112,7 @@ function loginUser($conn, $nickName, $password)
     $checkPassword = password_verify($password, $passwordHashed);
     // podmienka - ak sa heslo zadane uzivatelom nezhoduje s heslom v databaze tak to returne false
     if ($checkPassword == false) {
-        header("location: ../../public/usr/login_page.php?error=wrongLogin");
+        header("location: ../../dynamic/php/user_login.php?error=wrongLogin");
         exit();
     } elseif ($checkPassword == true) {
         // session znamena, ze ten uzivatel bude prihlaseny aj ked sa bude preklikavat na inych podstrankach
@@ -121,7 +121,7 @@ function loginUser($conn, $nickName, $password)
         $_SESSION["userId"] = $nicknameExists["id"];
         $_SESSION["userNickname"] = $nicknameExists["nickname"];
 
-        header("location: ../../public/main/main_page.php");
+        header("location: ../../dynamic/php/index.php");
         exit();
     }
 }

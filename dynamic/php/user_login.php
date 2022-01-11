@@ -3,7 +3,7 @@
 session_start();
 
 include "header.php";
-/* include "utils/login_validation.php"; */
+include "utils/login_validation.php";
 
 ?>
 
@@ -72,7 +72,7 @@ include "header.php";
                             </svg>
                         </div>
                         <input id="text" type="text" class="login-input-input input" autocomplete="off"
-                            spellcheck="false" placeholder="Username" maxlength="15">
+                            spellcheck="false" placeholder="Username" maxlength="15" name="nickName">
                     </div>
                     <div class="login-input">
                         <div class="login-input-icon input-icon">
@@ -84,7 +84,7 @@ include "header.php";
                             </svg>
                         </div>
                         <input id="password" type="password" class="login-input-input input" autocomplete="off"
-                            spellcheck="false" placeholder="Password" maxlength="16">
+                            spellcheck="false" placeholder="Password" maxlength="16" name="password">
                     </div>
                     <div class="forget-password">
                         <span>Forgot password</span>
@@ -93,7 +93,7 @@ include "header.php";
 
                 <!-- login button -->
                 <div class="login-button-container">
-                    <button type="button" class="login-button">
+                    <button type="button" class="login-button" type="submit">
                         <span class="login-button-title">Sing up</span>
                         <span class="login-button-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -169,7 +169,7 @@ include "header.php";
                 </div>
                 <!-- signup button -->
                 <div class="login-button-container signup-button-container">
-                    <button type="button" class="login-button">
+                    <button type="button" class="login-button" type="submit">
                         <span class="login-button-title">Sing up</span>
                         <span class="login-button-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
