@@ -28,7 +28,7 @@ include "pwd_validation.php";
                 </div>
                 <button name="submit" type="submit">Continue</button>
             </form>
-            <a href="index.php" style="text-decoration:none" ;>
+            <a href="../../index.php" style="text-decoration:none" ;>
                 <p class='warning'
                     style='color:black; text-align:center; font-size: 1rem; background-color: orange; border-radius: 60px; width: 150px; margin-left: -25%;margin-bottom: 10%;  '>
                     Back </p>

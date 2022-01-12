@@ -6,10 +6,10 @@ if (isset($_POST["submit"])) {
     $password = $_POST["password"];
 
     require_once "../connect.php";
-    require_once "functions.php";
+    require_once "login_register_functions.php";
 
     loginUser($conn, $nickName, $password);
 } else {
-    header("location: ../eshop/dynamic/php/user_login.php"); // toto je vypis v url prehliadaci
-    exit();
+    /* header("location: eshop/dynamic/php/user_login.php"); // toto je vypis v url prehliadaci
+    exit(); */
 }

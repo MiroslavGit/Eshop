@@ -17,7 +17,7 @@
                     <h5 class="fw-light text-uppercase">Links</h5>
                     <ul class="list-unstyled">
                         <li class="my-3">
-                            <a href="index.php" class="text-white text-decoration-none text-muted">
+                            <a href="../../index.php" class="text-white text-decoration-none text-muted">
                                 <i class="fa fa-chevron-right me-1"></i> Home
                             </a>
                         </li>
@@ -135,7 +135,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <!-- jquery -->
-    <script src="../../jquery-3.6.0.js"></script>
+    <script src="dynamic/js/jquery-3.6.0.js"></script>
     <!-- isotope js -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <!-- custom js -->

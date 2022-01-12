@@ -1,8 +1,8 @@
 <?php
-$serverName = "localhost";
-$username = 'root';
-$password = '';
-$dbname = "gymm_shop";
+$serverName = "sql109.epizy.com";
+$username = 'epiz_30795548';
+$password = 'DpsUP3ChOnAjG';
+$dbname = "epiz_30795548_gymm_shop";
 
 
 /* Create conection */

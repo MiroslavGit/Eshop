@@ -1,6 +1,6 @@
 <ul class="nav flex-column bg-white mb-0">
     <li class="nav-item">
-        <a href="index.php" class="nav-link text-dark font-italic ">
+        <a href="../../index.php" class="nav-link text-dark font-italic ">
             <i class="fa fa-home fa-fw"></i> Home
         </a>
     </li>
@@ -39,9 +39,4 @@
             <i class="fa fa-sign-in fa-fw"></i> <strong>Sign in</strong>
         </a>
     </li>
-
-
-
-
-
 </ul>

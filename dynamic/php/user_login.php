@@ -3,7 +3,9 @@
 session_start();
 
 include "header.php";
+include "utils/login_register_functions.php";
 include "utils/login_validation.php";
+
 
 ?>
 
@@ -93,17 +95,19 @@ include "utils/login_validation.php";
 
                 <!-- login button -->
                 <div class="login-button-container">
-                    <button type="button" class="login-button" type="submit">
-                        <span class="login-button-title">Sing up</span>
-                        <span class="login-button-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-                                <polyline points="10 17 15 12 10 7"></polyline>
-                                <line x1="15" y1="12" x2="3" y2="12"></line>
-                            </svg>
-                        </span>
-                    </button>
+                    <form action="user_login.php" method="post">
+                        <button class="login-button" type="submit">
+                            <span class="login-button-title">Sing up</span>
+                            <span class="login-button-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                    <polyline points="10 17 15 12 10 7"></polyline>
+                                    <line x1="15" y1="12" x2="3" y2="12"></line>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
                 </div>
             </div>
             <img draggable="false" src="http://upir.ir/images/pnohpxzkvd513silj3jx.svg" class="form-wave" alt="waves">
@@ -169,17 +173,19 @@ include "utils/login_validation.php";
                 </div>
                 <!-- signup button -->
                 <div class="login-button-container signup-button-container">
-                    <button type="button" class="login-button" type="submit">
-                        <span class="login-button-title">Sing up</span>
-                        <span class="login-button-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-                                <polyline points="10 17 15 12 10 7"></polyline>
-                                <line x1="15" y1="12" x2="3" y2="12"></line>
-                            </svg>
-                        </span>
-                    </button>
+                    <form action="user_login.php" method="post">
+                        <button class="login-button" type="submit">
+                            <span class="login-button-title">Sing up</span>
+                            <span class="login-button-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                    <polyline points="10 17 15 12 10 7"></polyline>
+                                    <line x1="15" y1="12" x2="3" y2="12"></line>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
                 </div>
             </div>
             <img draggable="false" src="http://upir.ir/images/pnohpxzkvd513silj3jx.svg" class="form-wave" alt="waves">
@@ -198,7 +204,7 @@ if (isset($_GET["error"])) {
 ?>
 
 <!-- jquery -->
-<script src="../../jquery-3.6.0.js?<?php echo time(); ?>"></script>
+<script src="../js/jquery-3.6.0.js?<?php echo time(); ?>"></script>
 <!-- Custom script -->
 <script src="../js/user_login.js?<?php echo time(); ?>"></script>
 </body>
