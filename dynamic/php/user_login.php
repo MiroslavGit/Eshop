@@ -3,8 +3,6 @@
 session_start();
 
 include "header.php";
-include "utils/login_register_functions.php";
-include "utils/login_validation.php";
 
 
 ?>
@@ -192,16 +190,6 @@ include "utils/login_validation.php";
         </div>
     </section>
 </div>
-
-<?php
-
-if (isset($_GET["error"])) {
-    if (!empty($_GET["error" == "wrongLogin"])) {
-        echo "<p class='warning' style='color:white; text-align:center; font-size: 1rem; background-color: rgba(165, 161, 161, 0.65); border-radius: 60px; padding: 8px; width: 300px; margin-left: 7%; margin-bottom:40px; margin-top:30px;'> Incorrect login information ! </p>";
-    }
-}
-
-?>
 
 <!-- jquery -->
 <script src="../js/jquery-3.6.0.js?<?php echo time(); ?>"></script>

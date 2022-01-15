@@ -24,7 +24,7 @@
     <div class="vertical-nav bg-white fixed-top" id="sidebar">
         <div class="py-4 px-3 mb-4 bg-light">
             <div class="d-flex">
-                <a href="index.php">
+                <a href="../../index.php">
                     <img src="../../photos/logo.jpg" alt="logo" width="65"
                         class="rounded-circle img-thumbnail shadow-sm" />
                 </a>
